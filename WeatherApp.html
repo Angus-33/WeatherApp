@@ -1,387 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Home | WHETHERSA</title>
-  <link rel="icon" href="">
-  <link rel="preload" href="./assets/css/PackageStyle1.css" as="style">
-  <link rel="stylesheet" href="./assets/css/PackageStyle2.css" data-n-g="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home | WHETHERSA</title>
+    <link rel="icon" href="">
+    <link rel="preload" href="./assets/css/PackageStyle1.css" as="style">
+    <link rel="stylesheet" href="./assets/css/PackageStyle2.css" data-n-g="">
 </head>
 
 <body>
 
-  <div id="__next" data-reactroot="">
+
+    <div class="erfan" id="test"></div>
+
+<div id="__next" data-reactroot="">
     <div class="min-h-screen bg-gray-100 dark:bg-black2 dark:text-white">
-      <main class="md:flex max-w-screen-2xl mx-auto overflow-x-hidden">
+        <main class="md:flex max-w-screen-2xl mx-auto overflow-x-hidden">
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
-          <defs>
-            <radialgradient id="gradYellow" cx="50%" cy="50%" r="80%" fx="90%" fy="80%">
-              <stop offset="0%" style="stop-color:yellow;stop-opacity:1"></stop>
-              <stop offset="100%" style="stop-color:orange;stop-opacity:1"></stop>
-            </radialgradient>
-            <radialgradient id="gradDarkGray" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-              <stop offset="0%" style="stop-color:white;stop-opacity:1"></stop>
-              <stop offset="70%" style="stop-color:gray;stop-opacity:1"></stop>
-              <stop offset="100%" style="stop-color:dimgray;stop-opacity:1"></stop>
-            </radialgradient>
-            <radialgradient id="gradGray" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-              <stop offset="0%" style="stop-color:white;stop-opacity:1"></stop>
-              <stop offset="100%" style="stop-color:darkgray;stop-opacity:1"></stop>
-            </radialgradient>
-            <lineargradient id="gradWhite" x1="40%" y1="50%" x2="90%" y2="90%">
-              <stop offset="0%" style="stop-color:white;stop-opacity:1"></stop>
-              <stop offset="100%" style="stop-color:darkgray;top-opacity:1"></stop>
-            </lineargradient>
-          </defs>
+            <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+                <defs>
+                    <radialgradient id="gradYellow" cx="50%" cy="50%" r="80%" fx="90%" fy="80%">
+                        <stop offset="0%" style="stop-color:yellow;stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:orange;stop-opacity:1"></stop>
+                    </radialgradient>
+                    <radialgradient id="gradDarkGray" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:white;stop-opacity:1"></stop>
+                        <stop offset="70%" style="stop-color:gray;stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:dimgray;stop-opacity:1"></stop>
+                    </radialgradient>
+                    <radialgradient id="gradGray" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color:white;stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:darkgray;stop-opacity:1"></stop>
+                    </radialgradient>
+                    <lineargradient id="gradWhite" x1="40%" y1="50%" x2="90%" y2="90%">
+                        <stop offset="0%" style="stop-color:white;stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:darkgray;top-opacity:1"></stop>
+                    </lineargradient>
+                </defs>
 
-          <symbol id="sun">
-            <circle cx="50" cy="50" r="20" fill="url(#gradYellow)"></circle>
-            <line x1="50" y1="27" x2="50" y2="2" class="longRay"></line>
-            <line x1="50" y1="73" x2="50" y2="98" class="longRay"></line>
-            <line x1="27" y1="50" x2="2" y2="50" class="longRay"></line>
-            <line x1="73" y1="50" x2="98" y2="50" class="longRay"></line>
-            <line x1="34" y1="34" x2="16" y2="16" class="longRay"></line>
-            <line x1="66" y1="66" x2="84" y2="84" class="longRay"></line>
-            <line x1="34" y1="66" x2="16" y2="84" class="longRay"></line>
-            <line x1="66" y1="34" x2="84" y2="16" class="longRay"></line>
-            <line x1="59" y1="29" x2="66" y2="13" class="shortRay"></line>
-            <line x1="71" y1="42" x2="87" y2="35" class="shortRay"></line>
-            <line x1="71" y1="58.5" x2="87" y2="65" class="shortRay"></line>
-            <line x1="59" y1="71" x2="66" y2="87" class="shortRay"></line>
-            <line x1="41" y1="71" x2="34" y2="87" class="shortRay"></line>
-            <line x1="29.5" y1="58.5" x2="13" y2="66" class="shortRay"></line>
-            <line x1="29" y1="42" x2="13" y2="35" class="shortRay"></line>
-            <line x1="41" y1="29" x2="35" y2="13" class="shortRay"></line>
-          </symbol>
-          <symbol id="moon">
-            <path d="M60,20 A30,30 0 1,0 90,65 22,22 0 1,1 60,20z" fill="url(#gradYellow)"></path>
-          </symbol>
-          <symbol id="star">
-            <polygon points="5,0 2,10 10,4 0,4 8,10" style="fill:url(#gradYellow);fill-rule:nonzero"></polygon>
-          </symbol>
-          <symbol id="grayCloud">
-            <path d="M20,15 Q25,0 45,11 Q60,5 60,20 A30,15 5 1,1 20,15 Z"></path>
-          </symbol>
-          <symbol id="whiteCloud">
-            <path fill="url(#gradWhite)"
-              d="M11,47 Q13,37 21,42 Q31,30 41,38 A28,21 -25 1,1 35,75 Q23,85 19,73 A12,12 0 0,1 11,47Z"></path>
-          </symbol>
-          <symbol id="rainDrop">
-            <path fill="lightblue" d="M10 0 Q10,0 14,7 A5,5 0 1,1 6,7 Q10,0 10,0Z"></path>
-          </symbol>
-          <symbol id="rainDrizzle">
-            <line x1="20" y1="2" x2="10" y2="40"></line>
-          </symbol>
-          <symbol id="thunderBolt">
-            <path fill="black" d="M15,0 L1,23 L8,23 L0,40 L15,19 L8,19Z"></path>
-          </symbol>
-          <symbol id="snowFlake">
-            <path d="M5,0 L5,10 M0,5 L10,5 M1.5,1.5 L8.5,8.5 M8.5,1.5 L1.5,8.5"></path>
-            <path d="M3.5,0.25 L5,2 L6.5,0.25 M3.5,9.75 L5,8 L6.5,9.75"></path>
-            <path d="M0.25,3.5 L2,5 L0.25,6.5 M9.75,3.5 L8,5 L9.75,6.5"></path>
-            <path d="M0.75,2.90 L2.85,2.85 L2.90,0.75 M7.25,9.35 L7.15,7.15 L9.35,7.25"></path>
-            <path d="M0.75,7.25 L2.85,7.15 L2.90,9.35 M7.15,0.75 L7.25,2.85 L9.35,2.90"></path>
-          </symbol>
-          <symbol id="icePellet">
-            <circle cx="4" cy="4" r="4" fill="#e3fcff"></circle>
-          </symbol>
-          <symbol id="mist">
-            <path d="M5,34 L43,34"></path>
-            <path d="M10,40 L40,40 Q51.5,40 50,35 T60,30 L80,30"></path>
-            <path d="M15,45 L45,45 Q56.5,45 55,40 T65,35 L90,35"></path>
-            <path d="M60,42 L85,42"></path>
-          </symbol>
-        </svg>
+                <symbol id="sun">
+                    <circle cx="50" cy="50" r="20" fill="url(#gradYellow)"></circle>
+                    <line x1="50" y1="27" x2="50" y2="2" class="longRay"></line>
+                    <line x1="50" y1="73" x2="50" y2="98" class="longRay"></line>
+                    <line x1="27" y1="50" x2="2" y2="50" class="longRay"></line>
+                    <line x1="73" y1="50" x2="98" y2="50" class="longRay"></line>
+                    <line x1="34" y1="34" x2="16" y2="16" class="longRay"></line>
+                    <line x1="66" y1="66" x2="84" y2="84" class="longRay"></line>
+                    <line x1="34" y1="66" x2="16" y2="84" class="longRay"></line>
+                    <line x1="66" y1="34" x2="84" y2="16" class="longRay"></line>
+                    <line x1="59" y1="29" x2="66" y2="13" class="shortRay"></line>
+                    <line x1="71" y1="42" x2="87" y2="35" class="shortRay"></line>
+                    <line x1="71" y1="58.5" x2="87" y2="65" class="shortRay"></line>
+                    <line x1="59" y1="71" x2="66" y2="87" class="shortRay"></line>
+                    <line x1="41" y1="71" x2="34" y2="87" class="shortRay"></line>
+                    <line x1="29.5" y1="58.5" x2="13" y2="66" class="shortRay"></line>
+                    <line x1="29" y1="42" x2="13" y2="35" class="shortRay"></line>
+                    <line x1="41" y1="29" x2="35" y2="13" class="shortRay"></line>
+                </symbol>
+                <symbol id="moon">
+                    <path d="M60,20 A30,30 0 1,0 90,65 22,22 0 1,1 60,20z" fill="url(#gradYellow)"></path>
+                </symbol>
+                <symbol id="star">
+                    <polygon points="5,0 2,10 10,4 0,4 8,10" style="fill:url(#gradYellow);fill-rule:nonzero"></polygon>
+                </symbol>
+                <symbol id="grayCloud">
+                    <path d="M20,15 Q25,0 45,11 Q60,5 60,20 A30,15 5 1,1 20,15 Z"></path>
+                </symbol>
+                <symbol id="whiteCloud">
+                    <path fill="url(#gradWhite)"
+                          d="M11,47 Q13,37 21,42 Q31,30 41,38 A28,21 -25 1,1 35,75 Q23,85 19,73 A12,12 0 0,1 11,47Z"></path>
+                </symbol>
+                <symbol id="rainDrop">
+                    <path fill="lightblue" d="M10 0 Q10,0 14,7 A5,5 0 1,1 6,7 Q10,0 10,0Z"></path>
+                </symbol>
+                <symbol id="rainDrizzle">
+                    <line x1="20" y1="2" x2="10" y2="40"></line>
+                </symbol>
+                <symbol id="thunderBolt">
+                    <path fill="black" d="M15,0 L1,23 L8,23 L0,40 L15,19 L8,19Z"></path>
+                </symbol>
+                <symbol id="snowFlake">
+                    <path d="M5,0 L5,10 M0,5 L10,5 M1.5,1.5 L8.5,8.5 M8.5,1.5 L1.5,8.5"></path>
+                    <path d="M3.5,0.25 L5,2 L6.5,0.25 M3.5,9.75 L5,8 L6.5,9.75"></path>
+                    <path d="M0.25,3.5 L2,5 L0.25,6.5 M9.75,3.5 L8,5 L9.75,6.5"></path>
+                    <path d="M0.75,2.90 L2.85,2.85 L2.90,0.75 M7.25,9.35 L7.15,7.15 L9.35,7.25"></path>
+                    <path d="M0.75,7.25 L2.85,7.15 L2.90,9.35 M7.15,0.75 L7.25,2.85 L9.35,2.90"></path>
+                </symbol>
+                <symbol id="icePellet">
+                    <circle cx="4" cy="4" r="4" fill="#e3fcff"></circle>
+                </symbol>
+                <symbol id="mist">
+                    <path d="M5,34 L43,34"></path>
+                    <path d="M10,40 L40,40 Q51.5,40 50,35 T60,30 L80,30"></path>
+                    <path d="M15,45 L45,45 Q56.5,45 55,40 T65,35 L90,35"></path>
+                    <path d="M60,42 L85,42"></path>
+                </symbol>
+            </svg>
 
-        <div class="md:w-1/3 p-3 md:py-5 md:px-5 lg:px-10 md:rounded-r-3xl md:rounded-s-3xl bg-white dark:bg-black">
-          <div
-            class="flex space-x-2 lg:space-x-4 items-center justify-center bg-gray-100 dark:bg-black2 p-2 rounded-full mt-3 md:mt-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-black dark:text-white">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
-              </path>
-            </svg><input type="text" class="outline-none bg-transparent flex-1 md:w-full"
-              placeholder="Search for place"><button class=""><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                class="h-5 w-5 text-gray-400">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg></button></div>
-          <div class="flex flex-col py-2 md:py-8 space-y-4 px-4 lg:px-12">
-            <div class="flex md:flex-col justify-between mt-5 md:mt-0">
-              <figure><svg class="icon w-24 md:w-56 h-24 md:h-56" viewBox="0 0 100 100">
-                  <use xlink:href="#sun" x="-12" y="-18"></use>
-                  <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                  <use xlink:href="#rainDrizzle" x="25" y="65"></use>
-                  <use xlink:href="#rainDrizzle" x="40" y="65"></use>
-                  <use xlink:href="#whiteCloud" x="7"></use>
-                </svg></figure>
-              <div class="flex text-[4rem] md:text-[6rem] font-extralight">
-                <h2>12</h2>
-                <p class="text-[3rem] md:text-[4rem] md:leading-normal">°<!-- -->C</p>
-              </div>
-            </div>
-            <div class="grid lg:flex justify-between">
-              <h1 class="text-xl font-bold">Paris</h1>
-              <div class="flex">
-                <h2 class="text-lg font-medium">Monday,</h2>
-                <p class="text-lg font-thin">May 3</p>
-              </div>
-            </div>
-            <hr>
-            <div class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-6 w-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
-              </svg>
-              <h3 class="flex-1">Patchy Drizzle Day</h3>
-            </div>
-            <div class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-6 w-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
-                </path>
-              </svg>
-              <h3 class="flex-1">16:30</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="md:w-2/3 bg-gray-100 dark:bg-black2 py-5 px-5 lg:px-10 md:overflow-y-scroll">
-          <div class="text-black dark:text-white space-y-16">
-            <div class="sm:flex justify-between items-center">
-              <div class="flex flex-1 space-x-8 items-center">
-                <p class="text-2xl font-black">WHETHERSA</p>
-              </div>
-              <div class="flex items-center space-x-8 justify-between mt-5 sm:mt-0">
-                <div class="flex items-center space-x-4"><button
-                    class="bg-black text-white dark:bg-white dark:text-black2 hover:scale-110 rounded-full p-1 h-8 w-10 shadow-md flex justify-center items-center">°C</button><button
-                    class="bg-white text-black dark:bg-black dark:text-white hover:scale-110 rounded-full p-1 h-8 w-10 shadow-md flex justify-center items-center">°F</button>
-                </div><button class=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="2" stroke="currentColor" aria-hidden="true" class="w-6 h-6 hidden dark:block">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
-                    </path>
-                  </svg><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" aria-hidden="true" class="w-6 h-6 dark:hidden">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                  </svg></button>
-                <div class="relative"><button
-                    class="text-white dark:text-black group rounded-md inline-flex items-center font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-                    id="headlessui-popover-button-1" type="button" aria-expanded="false"><svg
-                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                      stroke="currentColor" aria-hidden="true" class="w-6 h-6 text-black dark:text-white mt-1">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
-                      </path>
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg></button></div>
-              </div>
-            </div>
-            <div class="flex justify-between overflow-x-scroll w-screen md:w-full p-2 md:p-6 pl-0">
-              <div
-                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                <p>Tue</p>
-                <figure><svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                    <use xlink:href="#moon" x="-20" y="-15"></use>
-                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                    <use id="snowFlake2" xlink:href="#snowFlake" x="35" y="65"></use>
-                    <use id="snowFlake4" xlink:href="#snowFlake" x="50" y="65"></use>
-                    <use xlink:href="#rainDrizzle" x="25" y="65"></use>
-                    <use xlink:href="#rainDrizzle" x="40" y="65"></use>
-                    <use xlink:href="#whiteCloud" x="7"></use>
-                  </svg></figure>
-                <div class="flex items-center">
-                  <p class="font-medium">12<!-- -->°</p>
-                  <p class="text-gray-400 text-xs">2<!-- -->°</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                <p>Wed</p>
-                <figure><svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                    <use xlink:href="#whiteCloud" x="7"></use>
-                  </svg></figure>
-                <div class="flex items-center">
-                  <p class="font-medium">22<!-- -->°</p>
-                  <p class="text-gray-400 text-xs">5<!-- -->°</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                <p>Thu</p>
-                <figure><svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                    <use xlink:href="#moon" x="-20" y="-15"></use>
-                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                    <use xlink:href="#rainDrizzle" x="25" y="65"></use>
-                    <use xlink:href="#rainDrizzle" x="40" y="65"></use>
-                    <use xlink:href="#whiteCloud" x="7"></use>
-                  </svg></figure>
-                <div class="flex items-center">
-                  <p class="font-medium">1<!-- -->°</p>
-                  <p class="text-gray-400 text-xs">2<!-- -->°</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                <p>Fri</p>
-                <figure><svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                    <use xlink:href="#moon" x="-15"></use>
-                    <use xlink:href="#star" x="42" y="30" class="stars animated infinite flash"></use>
-                    <use xlink:href="#star" x="61" y="32" class="stars animated infinite flash delay-1s"></use>
-                    <use xlink:href="#star" x="55" y="50" class="stars animated infinite flash delay-2s"></use>
-                  </svg></figure>
-                <div class="flex items-center">
-                  <p class="font-medium">21<!-- -->°</p>
-                  <p class="text-gray-400 text-xs">4<!-- -->°</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                <p>Sat</p>
-                <figure><svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                    <use xlink:href="#grayCloud" x="25" y="10" class="reverse-small-cloud" fill="url(#gradDarkGray)">
-                    </use>
-                    <use xlink:href="#thunderBolt" x="30" y="61" class="lighting animated infinite flash"></use>
-                    <use xlink:href="#whiteCloud" x="7"></use>
-                    <use xlink:href="#thunderBolt" x="45" y="56" class="lighting animated infinite flash delay-1s">
-                    </use>
-                  </svg></figure>
-                <div class="flex items-center">
-                  <p class="font-medium">6<!-- -->°</p>
-                  <p class="text-gray-400 text-xs">-1<!-- -->°</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                <p>Mon</p>
-                <figure><svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                    <use xlink:href="#sun"></use>
-                  </svg></figure>
-                <div class="flex items-center">
-                  <p class="font-medium">8<!-- -->°</p>
-                  <p class="text-gray-400 text-xs">2<!-- -->°</p>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col space-y-4">
-              <h3 class="text-lg font-bold">Today's Highlights</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-4">
-                  <p class="text-gray-400 w-full">UV Index</p><img src="./Home _ WHETHERSA_files/uv.png" class="w-20"
-                    alt="">
-                  <div class="flex justify-between items-center space-x-2">
-                    <p class="text-gray-100 dark:text-white/40 text-md">1</p>
-                    <p class="text-gray-200 dark:text-white/60 text-md">2</p>
-                    <p class="text-gray-300 dark:text-white/80 text-xl">3</p>
-                    <p class=" text-2xl font-bold">4</p>
-                    <p class="text-gray-300 dark:text-white/80 text-xl">5</p>
-                    <p class="text-gray-200 dark:text-white/60 text-md">6</p>
-                    <p class="text-gray-100 dark:text-white/40 text-md">7</p>
-                  </div>
-                </div>
+            <div class="md:w-1/3 p-3 md:py-5 md:px-5 lg:px-10 md:rounded-r-3xl md:rounded-s-3xl bg-white dark:bg-black">
                 <div
-                  class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-4 relative">
-                  <p class="text-gray-400 w-full">Wind Staus</p>
-                  <figure class=" absolute bottom-0"><svg class="icon w-24" viewBox="0 0 100 100">
-                      <use class="mist" xlink:href="#mist" x="0" y="0"></use>
-                    </svg></figure>
-                  <div class="flex items-end">
-                    <p class=" text-[4rem] font-light">7.70</p>
-                    <div class="mb-5">km/h</div>
-                  </div>
+                        class="flex space-x-2 lg:space-x-4 items-center justify-center bg-gray-100 dark:bg-black2 p-2 rounded-full mt-3 md:mt-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                         stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-black dark:text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
+                        </path>
+                    </svg>
+                    <input type="text" class="outline-none bg-transparent flex-1 md:w-full"
+                           placeholder="Search for place">
+                    <button class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                             class="h-5 w-5 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </button>
                 </div>
-                <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-6">
-                  <p class="text-gray-400 w-full">Sunrise &amp; Sunset</p>
-                  <div class="flex space-x-4">
-                    <figure><svg class="icon h-9 w-9" viewBox="0 0 100 100">
-                        <use xlink:href="#sun"></use>
-                      </svg></figure>
-                    <div>
-                      <p>06:30 AM</p>
-                      <p class="text-xs text-gray-400">-1m 32s</p>
+                <div class="flex flex-col py-2 md:py-8 space-y-4 px-4 lg:px-12">
+                    <div class="flex md:flex-col justify-between mt-5 md:mt-0">
+                        <figure>
+                            <svg class="icon w-24 md:w-56 h-24 md:h-56" viewBox="0 0 100 100">
+                                <use xlink:href="#sun" x="-12" y="-18"></use>
+                                <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
+                                <use xlink:href="#rainDrizzle" x="25" y="65"></use>
+                                <use xlink:href="#rainDrizzle" x="40" y="65"></use>
+                                <use xlink:href="#whiteCloud" x="7"></use>
+                            </svg>
+                        </figure>
+                        <div class="flex text-[4rem] md:text-[6rem] font-extralight">
+                            <h2>12</h2>
+                            <p class="text-[3rem] md:text-[4rem] md:leading-normal">°<!-- --> C</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="flex space-x-4">
-                    <figure><svg class="icon h-9 w-9" viewBox="0 0 100 100">
-                        <use xlink:href="#moon" x="-15"></use>
-                        <use xlink:href="#star" x="42" y="30" class="stars animated infinite flash"></use>
-                        <use xlink:href="#star" x="61" y="32" class="stars animated infinite flash delay-1s"></use>
-                        <use xlink:href="#star" x="55" y="50" class="stars animated infinite flash delay-2s"></use>
-                      </svg></figure>
-                    <div>
-                      <p>08:43 PM</p>
-                      <p class="text-xs text-gray-400">+2m 43s</p>
+                    <div class="grid lg:flex justify-between">
+                        <h1 class="text-xl font-bold">Paris</h1>
+                        <div class="flex">
+                            <h2 class="text-lg font-medium">Monday,</h2>
+                            <p class="text-lg font-thin">May 3</p>
+                        </div>
                     </div>
-                  </div>
+                    <hr>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                             class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                        </svg>
+                        <h3 class="flex-1">Patchy Drizzle Day</h3>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                             class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                        <h3 class="flex-1">16:30</h3>
+                    </div>
                 </div>
-                <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col space-y-4">
-                  <p class="text-gray-400">Humidity</p>
-                  <div class="flex items-top">
-                    <p class=" text-[4rem] font-light">12</p>
-                    <div class="mt-5">%</div>
-                  </div>
-                  <div class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                      viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
-                      </path>
-                    </svg>
-                    <p class="w-full">No data </p>
-                  </div>
-                </div>
-                <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col space-y-4">
-                  <p class="text-gray-400">Visibility</p>
-                  <div class="flex items-top">
-                    <p class=" text-[4rem] font-light">5.2</p>
-                    <div class="mt-5">km</div>
-                  </div>
-                  <div class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                      viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
-                      </path>
-                    </svg>
-                    <p class="w-full">No data </p>
-                  </div>
-                </div>
-                <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col space-y-4">
-                  <p class="text-gray-400">Air Quality</p>
-                  <div class="flex items-top">
-                    <p class=" text-[4rem] font-light">105</p>
-                    <div class="mt-5"></div>
-                  </div>
-                  <div class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                      viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
-                      </path>
-                    </svg>
-                    <p class="w-full">No data </p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-        
-      </main>
-    </div>
-  </div>
 
-  <script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"rhJssJkOVHCfxHh79AhOI","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script>
-  <script src="./assets/js/webpack.js"></script>
-  <script src="./assets/js/framework.js"></script>
-  <script src="./assets/js/app.js" ></script>
-  <script src="./assets/js/package1.js"></script>
-  <script src="./assets/js/package2.js"></script>
-  <script src="./assets/js/main.js" defer=""></script>
+            <div class="md:w-2/3 bg-gray-100 dark:bg-black2 py-5 px-5 lg:px-10 md:overflow-y-scroll">
+                <div class="text-black dark:text-white space-y-16">
+
+                    <div class="sm:flex justify-between items-center">
+                        
+                        <div class="flex flex-1 space-x-8 items-center">
+                            <p class="text-2xl font-black">WHETHERSA</p>
+                        </div>
+
+                        <div class="flex items-center space-x-8 justify-between mt-5 sm:mt-0">
+                            <div class="flex items-center space-x-4">
+                                <button
+                                        class="bg-black text-white dark:bg-white dark:text-black2 hover:scale-110 rounded-full p-1 h-8 w-10 shadow-md flex justify-center items-center">
+                                    English
+                                </button>
+                                <button
+                                        class="bg-white text-black dark:bg-black dark:text-white hover:scale-110 rounded-full p-1 h-8 w-10 shadow-md flex justify-center items-center">
+                                    Persian
+                                </button>
+                            </div>
+                            <button class="ChangeThem">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                     class="w-6 h-6 hidden dark:block">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                     stroke="currentColor" aria-hidden="true" class="w-6 h-6 dark:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                                </svg>
+                            </button>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="flex justify-between overflow-x-scroll w-screen md:w-full p-2 md:p-6 pl-0">
+                        <div
+                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                            <p>Tue</p>
+                            <figure>
+                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                    <use xlink:href="#moon" x="-20" y="-15"></use>
+                                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
+                                    <use id="snowFlake2" xlink:href="#snowFlake" x="35" y="65"></use>
+                                    <use id="snowFlake4" xlink:href="#snowFlake" x="50" y="65"></use>
+                                    <use xlink:href="#rainDrizzle" x="25" y="65"></use>
+                                    <use xlink:href="#rainDrizzle" x="40" y="65"></use>
+                                    <use xlink:href="#whiteCloud" x="7"></use>
+                                </svg>
+                            </figure>
+                            <div class="flex items-center">
+                                <p class="font-medium">12<!-- --> °</p>
+                                <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                            </div>
+                        </div>
+                        <div
+                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                            <p>Wed</p>
+                            <figure>
+                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
+                                    <use xlink:href="#whiteCloud" x="7"></use>
+                                </svg>
+                            </figure>
+                            <div class="flex items-center">
+                                <p class="font-medium">22<!-- --> °</p>
+                                <p class="text-gray-400 text-xs">5<!-- --> °</p>
+                            </div>
+                        </div>
+                        <div
+                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                            <p>Thu</p>
+                            <figure>
+                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                    <use xlink:href="#moon" x="-20" y="-15"></use>
+                                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
+                                    <use xlink:href="#rainDrizzle" x="25" y="65"></use>
+                                    <use xlink:href="#rainDrizzle" x="40" y="65"></use>
+                                    <use xlink:href="#whiteCloud" x="7"></use>
+                                </svg>
+                            </figure>
+                            <div class="flex items-center">
+                                <p class="font-medium">1<!-- --> °</p>
+                                <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                            </div>
+                        </div>
+                        <div
+                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                            <p>Fri</p>
+                            <figure>
+                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                    <use xlink:href="#moon" x="-15"></use>
+                                    <use xlink:href="#star" x="42" y="30" class="stars animated infinite flash"></use>
+                                    <use xlink:href="#star" x="61" y="32"
+                                         class="stars animated infinite flash delay-1s"></use>
+                                    <use xlink:href="#star" x="55" y="50"
+                                         class="stars animated infinite flash delay-2s"></use>
+                                </svg>
+                            </figure>
+                            <div class="flex items-center">
+                                <p class="font-medium">21<!-- --> °</p>
+                                <p class="text-gray-400 text-xs">4<!-- --> °</p>
+                            </div>
+                        </div>
+                        <div
+                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                            <p>Sat</p>
+                            <figure>
+                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
+                                    <use xlink:href="#grayCloud" x="25" y="10" class="reverse-small-cloud"
+                                         fill="url(#gradDarkGray)">
+                                    </use>
+                                    <use xlink:href="#thunderBolt" x="30" y="61"
+                                         class="lighting animated infinite flash"></use>
+                                    <use xlink:href="#whiteCloud" x="7"></use>
+                                    <use xlink:href="#thunderBolt" x="45" y="56"
+                                         class="lighting animated infinite flash delay-1s">
+                                    </use>
+                                </svg>
+                            </figure>
+                            <div class="flex items-center">
+                                <p class="font-medium">6<!-- --> °</p>
+                                <p class="text-gray-400 text-xs">-1<!-- --> °</p>
+                            </div>
+                        </div>
+                        <div
+                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                            <p>Mon</p>
+                            <figure>
+                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                    <use xlink:href="#sun"></use>
+                                </svg>
+                            </figure>
+                            <div class="flex items-center">
+                                <p class="font-medium">8<!-- --> °</p>
+                                <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col space-y-4">
+                        <h3 class="text-lg font-bold">Today's Highlights</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-4">
+                                <p class="text-gray-400 w-full">UV Index</p><img src="./Home _ WHETHERSA_files/uv.png"
+                                                                                 class="w-20"
+                                                                                 alt="">
+                                <div class="flex justify-between items-center space-x-2">
+                                    <p class="text-gray-100 dark:text-white/40 text-md">1</p>
+                                    <p class="text-gray-200 dark:text-white/60 text-md">2</p>
+                                    <p class="text-gray-300 dark:text-white/80 text-xl">3</p>
+                                    <p class=" text-2xl font-bold">4</p>
+                                    <p class="text-gray-300 dark:text-white/80 text-xl">5</p>
+                                    <p class="text-gray-200 dark:text-white/60 text-md">6</p>
+                                    <p class="text-gray-100 dark:text-white/40 text-md">7</p>
+                                </div>
+                            </div>
+                            <div
+                                    class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-4 relative">
+                                <p class="text-gray-400 w-full">Wind Staus</p>
+                                <figure class=" absolute bottom-0">
+                                    <svg class="icon w-24" viewBox="0 0 100 100">
+                                        <use class="mist" xlink:href="#mist" x="0" y="0"></use>
+                                    </svg>
+                                </figure>
+                                <div class="flex items-end">
+                                    <p class=" text-[4rem] font-light">7.70</p>
+                                    <div class="mb-5">km/h</div>
+                                </div>
+                            </div>
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-6">
+                                <p class="text-gray-400 w-full">Sunrise &amp; Sunset</p>
+                                <div class="flex space-x-4">
+                                    <figure>
+                                        <svg class="icon h-9 w-9" viewBox="0 0 100 100">
+                                            <use xlink:href="#sun"></use>
+                                        </svg>
+                                    </figure>
+                                    <div>
+                                        <p>06:30 AM</p>
+                                        <p class="text-xs text-gray-400">-1m 32s</p>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-4">
+                                    <figure>
+                                        <svg class="icon h-9 w-9" viewBox="0 0 100 100">
+                                            <use xlink:href="#moon" x="-15"></use>
+                                            <use xlink:href="#star" x="42" y="30"
+                                                 class="stars animated infinite flash"></use>
+                                            <use xlink:href="#star" x="61" y="32"
+                                                 class="stars animated infinite flash delay-1s"></use>
+                                            <use xlink:href="#star" x="55" y="50"
+                                                 class="stars animated infinite flash delay-2s"></use>
+                                        </svg>
+                                    </figure>
+                                    <div>
+                                        <p>08:43 PM</p>
+                                        <p class="text-xs text-gray-400">+2m 43s</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col space-y-4">
+                                <p class="text-gray-400">Humidity</p>
+                                <div class="flex items-top">
+                                    <p class=" text-[4rem] font-light">12</p>
+                                    <div class="mt-5">%</div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                         class="h-4 w-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                                        </path>
+                                    </svg>
+                                    <p class="w-full">No data </p>
+                                </div>
+                            </div>
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col space-y-4">
+                                <p class="text-gray-400">Visibility</p>
+                                <div class="flex items-top">
+                                    <p class=" text-[4rem] font-light">5.2</p>
+                                    <div class="mt-5">km</div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                         class="h-4 w-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                                        </path>
+                                    </svg>
+                                    <p class="w-full">No data </p>
+                                </div>
+                            </div>
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col space-y-4">
+                                <p class="text-gray-400">Air Quality</p>
+                                <div class="flex items-top">
+                                    <p class=" text-[4rem] font-light">105</p>
+                                    <div class="mt-5"></div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                         class="h-4 w-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                                        </path>
+                                    </svg>
+                                    <p class="w-full">No data </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+
+<script id="__NEXT_DATA__" type="application/json">
+    {"props":{"pageProps":{}},"page":"/","query":{},"buildId":"rhJssJkOVHCfxHh79AhOI","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
+</script>
+<script src="./assets/js/webpack.js"></script>
+<script src="./assets/js/framework.js"></script>
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/package1.js"></script>
+<!-- <script src="./assets/js/package2.js"></script> -->
+<script src="./assets/js/main.js" defer=""></script>
+
+<script>
+    function CheckTemplate(){
+        var Template = document.documentElement;
+        var TemplateMode = 0;
+        if(Template.classList.contains("dark")){
+            Template.classList.remove("dark")
+            TemplateMode = 0;
+        } else{
+            Template.classList.add("dark")  
+            TemplateMode = 1;
+        }
+           
+
+        document.cookie = "TemplateMode:" + TemplateMode
+    }
+
+    var btnChangeThem = document.getElementsByClassName("ChangeThem")[0]
+    btnChangeThem.addEventListener("click",function(){
+        CheckTemplate()
+    })
+
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    alert("TemplateMode")
+</script>
 
 </body>
 
