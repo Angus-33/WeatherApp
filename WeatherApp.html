@@ -177,10 +177,10 @@
 
                         <div class="flex items-center space-x-8 justify-between mt-5 sm:mt-0">
                             <div class="flex items-center space-x-4">
-                                <button onclick="ChangeLanguage(this,'English');" class="bg-black text-white dark:text-black2 hover:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang">
+                                <button onclick="ChangeLanguage(this,'English');" class="hover:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang">
                                     English
                                 </button>
-                                <button onclick="ChangeLanguage(this,'Persian');" class="bg-white text-black dark:text-white hover:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang active">
+                                <button onclick="ChangeLanguage(this,'Persian');" class="over:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang active">
                                     Persian
                                 </button>
                             </div>
@@ -444,25 +444,16 @@
 <script>
 
     //from cookie
-    let TempalteMode = 1; // on
+    let TempalteMode = 1; // on // 1 => english , 3 => persian
 
     function ChangeLanguage(e,val){
        if(!e.classList.contains("active")){
-            e.classList.add("active")
-            e.classList.add("dark:bg-white")
-            // dark:bg-white
-            // dark:bg-black
-
-            if(val == "English" && TempalteMode == 1){
+            if(val == "English"){
                 e.parentNode.childNodes[3].classList.remove("active")
-                e.parentNode.childNodes[3].classList.remove("dark:bg-white")
-                e.parentNode.childNodes[3].classList.add("dark:bg-black")
-                e.parentNode.childNodes[1].classList.add("dark:bg-white")
+                e.parentNode.childNodes[1].classList.add("active")  
             }else{
                 e.parentNode.childNodes[1].classList.remove("active")
-                e.parentNode.childNodes[1].classList.remove("dark:bg-black")
-                e.parentNode.childNodes[1].classList.add("dark:bg-white")
-                e.parentNode.childNodes[3].classList.add("dark:bg-black")
+                e.parentNode.childNodes[3].classList.add("active")
             }
        }
     }
@@ -477,8 +468,6 @@
             TempalteMode = 1;
         }
     }
-
-
 
     var btnChangeThem = document.getElementsByClassName("ChangeThem")[0]
     btnChangeThem.addEventListener("click",function(){
