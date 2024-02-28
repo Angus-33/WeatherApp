@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
 
     <div class="erfan" id="test"></div>
 
@@ -178,12 +177,10 @@
 
                         <div class="flex items-center space-x-8 justify-between mt-5 sm:mt-0">
                             <div class="flex items-center space-x-4">
-                                <button
-                                        class="bg-black text-white dark:bg-white dark:text-black2 hover:scale-110 rounded-full p-1 h-8 w-10 shadow-md flex justify-center items-center">
+                                <button onclick="ChangeLanguage(this,'English');" class="bg-black text-white dark:text-black2 hover:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang">
                                     English
                                 </button>
-                                <button
-                                        class="bg-white text-black dark:bg-black dark:text-white hover:scale-110 rounded-full p-1 h-8 w-10 shadow-md flex justify-center items-center">
+                                <button onclick="ChangeLanguage(this,'Persian');" class="bg-white text-black dark:text-white hover:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang active">
                                     Persian
                                 </button>
                             </div>
@@ -445,43 +442,49 @@
 <script src="./assets/js/main.js" defer=""></script>
 
 <script>
-    function CheckTemplate(){
-        var Template = document.documentElement;
-        var TemplateMode = 0;
-        if(Template.classList.contains("dark")){
-            Template.classList.remove("dark")
-            TemplateMode = 0;
-        } else{
-            Template.classList.add("dark")  
-            TemplateMode = 1;
-        }
-           
 
-        document.cookie = "TemplateMode:" + TemplateMode
+    //from cookie
+    let TempalteMode = 1; // on
+
+    function ChangeLanguage(e,val){
+       if(!e.classList.contains("active")){
+            e.classList.add("active")
+            e.classList.add("dark:bg-white")
+            // dark:bg-white
+            // dark:bg-black
+
+            if(val == "English" && TempalteMode == 1){
+                e.parentNode.childNodes[3].classList.remove("active")
+                e.parentNode.childNodes[3].classList.remove("dark:bg-white")
+                e.parentNode.childNodes[3].classList.add("dark:bg-black")
+                e.parentNode.childNodes[1].classList.add("dark:bg-white")
+            }else{
+                e.parentNode.childNodes[1].classList.remove("active")
+                e.parentNode.childNodes[1].classList.remove("dark:bg-black")
+                e.parentNode.childNodes[1].classList.add("dark:bg-white")
+                e.parentNode.childNodes[3].classList.add("dark:bg-black")
+            }
+       }
     }
+
+    function CheckTemplate(Mode){
+        var Template = document.documentElement;
+        if(Mode == 1){
+            Template.classList.add("dark")  
+            TempalteMode = 0;
+        } else{
+            Template.classList.remove("dark")
+            TempalteMode = 1;
+        }
+    }
+
+
 
     var btnChangeThem = document.getElementsByClassName("ChangeThem")[0]
     btnChangeThem.addEventListener("click",function(){
-        CheckTemplate()
+        CheckTemplate(TempalteMode)
     })
 
-    function getCookie(cname) {
-        let name = cname + "=";
-        let decodedCookie = decodeURIComponent(document.cookie);
-        let ca = decodedCookie.split(';');
-        for(let i = 0; i <ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
-
-    alert("TemplateMode")
 </script>
 
 </body>
