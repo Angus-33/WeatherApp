@@ -98,7 +98,7 @@
                 </symbol>
             </svg>
 
-            <div class="md:w-1/3 p-3 md:py-5 md:px-5 lg:px-10 md:rounded-r-3xl md:rounded-s-3xl bg-white dark:bg-black">
+            <div id="sidebar" class="md:w-1/3 p-3 md:py-5 md:px-5 lg:px-10 md:rounded-r-3xl md:rounded-s-3xl bg-white dark:bg-black">
                 <div
                         class="flex space-x-2 lg:space-x-4 items-center justify-center bg-gray-100 dark:bg-black2 p-2 rounded-full mt-3 md:mt-0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -172,7 +172,7 @@
                     <div class="sm:flex justify-between items-center">
                         
                         <div class="flex flex-1 space-x-8 items-center">
-                            <p class="text-2xl font-black">WHETHERSA</p>
+                            <p class="text-2xl font-black title-header">WHETHERSA</p>
                         </div>
 
                         <div class="flex items-center space-x-8 justify-between mt-5 sm:mt-0">
@@ -203,7 +203,7 @@
 
                     </div>
 
-                    <div class="flex justify-between overflow-x-scroll w-screen md:w-full p-2 md:p-6 pl-0">
+                    <div id="forecast" class="flex justify-center md:w-full p-2 md:p-6 pl-0">
                         <div
                                 class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
                             <p>Tue</p>
@@ -294,7 +294,7 @@
                                 <p class="text-gray-400 text-xs">-1<!-- --> °</p>
                             </div>
                         </div>
-                        <div
+                        <!-- <div
                                 class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
                             <p>Mon</p>
                             <figure>
@@ -303,10 +303,10 @@
                                 </svg>
                             </figure>
                             <div class="flex items-center">
-                                <p class="font-medium">8<!-- --> °</p>
-                                <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                                <p class="font-medium">8 °</p>
+                                <p class="text-gray-400 text-xs">2 °</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="flex flex-col space-y-4">
@@ -442,16 +442,26 @@
 <script src="./assets/js/main.js" defer=""></script>
 
 <script>
+    
+    // meteorology
+
+    // هوا شناسی
 
     //from cookie
     let TempalteMode = 1; // on // 1 => english , 3 => persian
 
     function ChangeLanguage(e,val){
+        let TitleHeader = document.getElementsByClassName("title-header")[0]
+        let SideBar = document.getElementById("sidebar")
+        let Forecast = document.getElementById("forecast")
+
        if(!e.classList.contains("active")){
             if(val == "English"){
+                SideBar.classList.remove("order")
                 e.parentNode.childNodes[3].classList.remove("active")
                 e.parentNode.childNodes[1].classList.add("active")  
             }else{
+                SideBar.classList.add("order")
                 e.parentNode.childNodes[1].classList.remove("active")
                 e.parentNode.childNodes[3].classList.add("active")
             }
