@@ -107,9 +107,9 @@
                               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
                         </path>
                     </svg>
-                    <input type="text" class="outline-none bg-transparent flex-1 md:w-full"
+                    <input type="text" id="searchbox" class="outline-none bg-transparent flex-1 md:w-full"
                            placeholder="Search for place">
-                    <button class="">
+                    <button class="m-0">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                              viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
                              class="h-5 w-5 text-gray-400">
@@ -184,7 +184,7 @@
                                     Persian
                                 </button>
                             </div>
-                            <button class="ChangeThem">
+                            <button class="BtnChangeTem">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                      stroke-width="2" stroke="currentColor" aria-hidden="true"
                                      class="w-6 h-6 hidden dark:block">
@@ -203,95 +203,96 @@
 
                     </div>
 
-                    <div id="forecast" class="flex justify-center md:w-full p-2 md:p-6 pl-0">
-                        <div
-                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                            <p>Tue</p>
-                            <figure>
-                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                    <use xlink:href="#moon" x="-20" y="-15"></use>
-                                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                                    <use id="snowFlake2" xlink:href="#snowFlake" x="35" y="65"></use>
-                                    <use id="snowFlake4" xlink:href="#snowFlake" x="50" y="65"></use>
-                                    <use xlink:href="#rainDrizzle" x="25" y="65"></use>
-                                    <use xlink:href="#rainDrizzle" x="40" y="65"></use>
-                                    <use xlink:href="#whiteCloud" x="7"></use>
-                                </svg>
-                            </figure>
-                            <div class="flex items-center">
-                                <p class="font-medium">12<!-- --> °</p>
-                                <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                    <div class="flex justify-center md:w-full p-2 md:p-6 pl-0">
+                        <div id="forecast" class="flex justify-content-center align-items-center flex-wrap">
+                            <div class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                                <p>Tue</p>
+                                <figure>
+                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                        <use xlink:href="#moon" x="-20" y="-15"></use>
+                                        <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
+                                        <use id="snowFlake2" xlink:href="#snowFlake" x="35" y="65"></use>
+                                        <use id="snowFlake4" xlink:href="#snowFlake" x="50" y="65"></use>
+                                        <use xlink:href="#rainDrizzle" x="25" y="65"></use>
+                                        <use xlink:href="#rainDrizzle" x="40" y="65"></use>
+                                        <use xlink:href="#whiteCloud" x="7"></use>
+                                    </svg>
+                                </figure>
+                                <div class="flex items-center">
+                                    <p class="font-medium">12<!-- --> °</p>
+                                    <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                                </div>
                             </div>
-                        </div>
-                        <div
-                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                            <p>Wed</p>
-                            <figure>
-                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                                    <use xlink:href="#whiteCloud" x="7"></use>
-                                </svg>
-                            </figure>
-                            <div class="flex items-center">
-                                <p class="font-medium">22<!-- --> °</p>
-                                <p class="text-gray-400 text-xs">5<!-- --> °</p>
+                            <div
+                                    class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                                <p>Wed</p>
+                                <figure>
+                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                        <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
+                                        <use xlink:href="#whiteCloud" x="7"></use>
+                                    </svg>
+                                </figure>
+                                <div class="flex items-center">
+                                    <p class="font-medium">22<!-- --> °</p>
+                                    <p class="text-gray-400 text-xs">5<!-- --> °</p>
+                                </div>
                             </div>
-                        </div>
-                        <div
-                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                            <p>Thu</p>
-                            <figure>
-                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                    <use xlink:href="#moon" x="-20" y="-15"></use>
-                                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                                    <use xlink:href="#rainDrizzle" x="25" y="65"></use>
-                                    <use xlink:href="#rainDrizzle" x="40" y="65"></use>
-                                    <use xlink:href="#whiteCloud" x="7"></use>
-                                </svg>
-                            </figure>
-                            <div class="flex items-center">
-                                <p class="font-medium">1<!-- --> °</p>
-                                <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                            <div
+                                    class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                                <p>Thu</p>
+                                <figure>
+                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                        <use xlink:href="#moon" x="-20" y="-15"></use>
+                                        <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
+                                        <use xlink:href="#rainDrizzle" x="25" y="65"></use>
+                                        <use xlink:href="#rainDrizzle" x="40" y="65"></use>
+                                        <use xlink:href="#whiteCloud" x="7"></use>
+                                    </svg>
+                                </figure>
+                                <div class="flex items-center">
+                                    <p class="font-medium">1<!-- --> °</p>
+                                    <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                                </div>
                             </div>
-                        </div>
-                        <div
-                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                            <p>Fri</p>
-                            <figure>
-                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                    <use xlink:href="#moon" x="-15"></use>
-                                    <use xlink:href="#star" x="42" y="30" class="stars animated infinite flash"></use>
-                                    <use xlink:href="#star" x="61" y="32"
-                                         class="stars animated infinite flash delay-1s"></use>
-                                    <use xlink:href="#star" x="55" y="50"
-                                         class="stars animated infinite flash delay-2s"></use>
-                                </svg>
-                            </figure>
-                            <div class="flex items-center">
-                                <p class="font-medium">21<!-- --> °</p>
-                                <p class="text-gray-400 text-xs">4<!-- --> °</p>
+                            <div
+                                    class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                                <p>Fri</p>
+                                <figure>
+                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                        <use xlink:href="#moon" x="-15"></use>
+                                        <use xlink:href="#star" x="42" y="30" class="stars animated infinite flash"></use>
+                                        <use xlink:href="#star" x="61" y="32"
+                                            class="stars animated infinite flash delay-1s"></use>
+                                        <use xlink:href="#star" x="55" y="50"
+                                            class="stars animated infinite flash delay-2s"></use>
+                                    </svg>
+                                </figure>
+                                <div class="flex items-center">
+                                    <p class="font-medium">21<!-- --> °</p>
+                                    <p class="text-gray-400 text-xs">4<!-- --> °</p>
+                                </div>
                             </div>
-                        </div>
-                        <div
-                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                            <p>Sat</p>
-                            <figure>
-                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                    <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                                    <use xlink:href="#grayCloud" x="25" y="10" class="reverse-small-cloud"
-                                         fill="url(#gradDarkGray)">
-                                    </use>
-                                    <use xlink:href="#thunderBolt" x="30" y="61"
-                                         class="lighting animated infinite flash"></use>
-                                    <use xlink:href="#whiteCloud" x="7"></use>
-                                    <use xlink:href="#thunderBolt" x="45" y="56"
-                                         class="lighting animated infinite flash delay-1s">
-                                    </use>
-                                </svg>
-                            </figure>
-                            <div class="flex items-center">
-                                <p class="font-medium">6<!-- --> °</p>
-                                <p class="text-gray-400 text-xs">-1<!-- --> °</p>
+                            <div
+                                    class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                                <p>Sat</p>
+                                <figure>
+                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
+                                        <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
+                                        <use xlink:href="#grayCloud" x="25" y="10" class="reverse-small-cloud"
+                                            fill="url(#gradDarkGray)">
+                                        </use>
+                                        <use xlink:href="#thunderBolt" x="30" y="61"
+                                            class="lighting animated infinite flash"></use>
+                                        <use xlink:href="#whiteCloud" x="7"></use>
+                                        <use xlink:href="#thunderBolt" x="45" y="56"
+                                            class="lighting animated infinite flash delay-1s">
+                                        </use>
+                                    </svg>
+                                </figure>
+                                <div class="flex items-center">
+                                    <p class="font-medium">6 °</p>
+                                    <p class="text-gray-400 text-xs">-1 °</p>
+                                </div>
                             </div>
                         </div>
                         <!-- <div
@@ -309,9 +310,9 @@
                         </div> -->
                     </div>
 
-                    <div class="flex flex-col space-y-4">
-                        <h3 class="text-lg font-bold">Today's Highlights</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div id="moreinformatino" class="flex flex-col space-y-4">
+                        <h3 class="text-lg text-center font-bold">Today's Highlights</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 box-information">
                             <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-4">
                                 <p class="text-gray-400 w-full">UV Index</p><img src="./Home _ WHETHERSA_files/uv.png"
                                                                                  class="w-20"
@@ -449,21 +450,42 @@
 
     //from cookie
     let TempalteMode = 1; // on // 1 => english , 3 => persian
+    let btnChangeTem = document.getElementsByClassName("BtnChangeTem")[0];
 
     function ChangeLanguage(e,val){
-        let TitleHeader = document.getElementsByClassName("title-header")[0]
-        let SideBar = document.getElementById("sidebar")
-        let Forecast = document.getElementById("forecast")
+        let TitleHeader = document.getElementsByClassName("title-header")[0];
+        let SideBar = document.getElementById("sidebar");
+        let SearchBox = document.getElementById("searchbox");
+        let MoreInformatinoBox = document.getElementById("moreinformatino");
+        let Forecast = document.getElementById("forecast");
 
        if(!e.classList.contains("active")){
-            if(val == "English"){
-                SideBar.classList.remove("order")
-                e.parentNode.childNodes[3].classList.remove("active")
-                e.parentNode.childNodes[1].classList.add("active")  
+            if(val == "English"){ 
+                SideBar.classList.remove("order");
+                e.parentNode.childNodes[3].classList.remove("active");
+                e.parentNode.childNodes[1].classList.add("active");
+                TitleHeader.innerHTML = "Meteorology";
+                btnChangeTem.classList.remove("persian-btn-change-template");
+                btnChangeTem.parentElement.classList.remove("btn-change-tem-lang");
+                TitleHeader.parentElement.classList.remove("persian-title");
+                SearchBox.classList.remove("persian-searchbox-input");
+                SearchBox.parentElement.classList.remove("persian");
+                SearchBox.setAttribute("placeholder","Search for place");
+                MoreInformatinoBox.firstElementChild.innerHTML = "Today's Highlights";
+                Forecast.classList.remove("persian");
             }else{
-                SideBar.classList.add("order")
-                e.parentNode.childNodes[1].classList.remove("active")
-                e.parentNode.childNodes[3].classList.add("active")
+                SideBar.classList.add("order");
+                e.parentNode.childNodes[1].classList.remove("active");
+                e.parentNode.childNodes[3].classList.add("active");
+                TitleHeader.innerHTML = "هوا شناسی";
+                btnChangeTem.classList.add("persian-btn-change-template");
+                btnChangeTem.parentElement.classList.add("btn-change-tem-lang");
+                TitleHeader.parentElement.classList.add("persian-title");
+                SearchBox.classList.add("persian-searchbox-input");
+                SearchBox.parentElement.classList.add("persian");
+                SearchBox.setAttribute("placeholder","نام شهر را وارد کنید")
+                MoreInformatinoBox.firstElementChild.innerHTML = "اطلاعات امروز";
+                Forecast.classList.add("persian");
             }
        }
     }
@@ -479,8 +501,7 @@
         }
     }
 
-    var btnChangeThem = document.getElementsByClassName("ChangeThem")[0]
-    btnChangeThem.addEventListener("click",function(){
+    btnChangeTem.addEventListener("click",function(){
         CheckTemplate(TempalteMode)
     })
 
