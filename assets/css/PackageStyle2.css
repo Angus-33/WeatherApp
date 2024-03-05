@@ -1588,3 +1588,41 @@ figure {
     border-top: 1px solid #e5e7eb;
     padding-top: 16px !important;
 }
+
+.w-250{
+    width: 250px !important;
+}
+
+.d-none{
+    display: none !important;
+}
+
+.v-hidden{
+    visibility: hidden !important;
+}
+
+video{
+    width: max-content;
+    border-radius: 5px;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(../font/Vazir.ttf);
+}
+
+.font-english{
+    font-family: ui-sans-serif, Arial, Tahoma;
+}
+
+.font-persian{
+    font-family: Vazir !important;
+}

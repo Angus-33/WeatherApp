@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Home | WHETHERSA</title>
-    <link rel="icon" href="">
+    <link rel="icon" type="image/x-icon" href="./assets/img/faveicon.png">
     <link rel="preload" href="./assets/css/PackageStyle1.css" as="style">
     <link rel="stylesheet" href="./assets/css/PackageStyle2.css" data-n-g="">
 </head>
@@ -99,69 +99,105 @@
             </svg>
 
             <div id="sidebar" class="md:w-1/3 p-3 md:py-5 md:px-5 lg:px-10 md:rounded-r-3xl md:rounded-s-3xl bg-white dark:bg-black">
-                <div
-                        class="flex space-x-2 lg:space-x-4 items-center justify-center bg-gray-100 dark:bg-black2 p-2 rounded-full mt-3 md:mt-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                         stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-black dark:text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
-                        </path>
-                    </svg>
-                    <input type="text" id="searchbox" class="outline-none bg-transparent flex-1 md:w-full"
-                           placeholder="Search for place">
-                    <button class="m-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                             class="h-5 w-5 text-gray-400">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex flex-col py-2 md:py-8 space-y-4 px-4 lg:px-12">
-                    <div class="flex md:flex-col justify-between mt-5 md:mt-0">
-                        <figure>
-                            <svg class="icon w-24 md:w-56 h-24 md:h-56" viewBox="0 0 100 100">
-                                <use xlink:href="#sun" x="-12" y="-18"></use>
-                                <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                                <use xlink:href="#rainDrizzle" x="25" y="65"></use>
-                                <use xlink:href="#rainDrizzle" x="40" y="65"></use>
-                                <use xlink:href="#whiteCloud" x="7"></use>
+                <form method="post" onsubmit="GetData()">
+                    <div class="flex space-x-2 lg:space-x-4 items-center justify-center bg-gray-100 dark:bg-black2 p-2 rounded-full mt-3 md:mt-0">
+                        <button class="m-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-black dark:text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
+                                </path>
                             </svg>
-                        </figure>
-                        <div class="flex text-[4rem] md:text-[6rem] font-extralight">
-                            <h2>12</h2>
-                            <p class="text-[3rem] md:text-[4rem] md:leading-normal">°<!-- --> C</p>
+                        </button>
+                        <input type="text" id="searchbox" class="outline-none bg-transparent flex-1 md:w-full" value="" placeholder="Search for place">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                class="h-5 w-5 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                </form>
+                <div class="flex flex-col py-2 md:py-8 space-y-4 px-4">
+                    <div class="flex md:flex-col justify-between mt-5 md:mt-0">
+                        <video autoplay loop muted>
+                            <source src="./assets/movie/Cloudy.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                          </video>
+                    </div>
+                    <div class="flex flex-col py-2 space-y-4">
+                        <div class="flex justify-between">
+                            <h1 class="text-xl font-bold">Paris</h1>
+                            <div class="flex">
+                                <h2 class="text-lg font-medium">Monday,</h2>
+                                <p class="text-lg font-thin">May 3</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-thermometer-sun" viewBox="0 0 16 16">
+                                <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5"/>
+                                <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1m5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5m4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0M8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5M12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5m-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708M8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5"/>
+                              </svg>
+                            <h3 class="flex-1">12°C</h3>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                 class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                            </svg>
+                            <h3 class="flex-1">Patchy Drizzle Day</h3>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                 class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                            <h3 class="flex-1">16:30</h3>
                         </div>
                     </div>
-                    <div class="grid lg:flex justify-between">
-                        <h1 class="text-xl font-bold">Paris</h1>
-                        <div class="flex">
-                            <h2 class="text-lg font-medium">Monday,</h2>
-                            <p class="text-lg font-thin">May 3</p>
+                    <div class="flex flex-col py-2 space-y-4  d-none">
+                        <div class="flex justify-between">
+                            <div class="flex">
+                                <h2 class="text-lg font-medium">Monday,</h2>
+                                <p class="text-lg font-thin">May 3</p>
+                            </div>
+                            <h1 class="text-xl font-bold">Paris</h1>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                             class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
-                        </svg>
-                        <h3 class="flex-1">Patchy Drizzle Day</h3>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                             class="h-6 w-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
-                            </path>
-                        </svg>
-                        <h3 class="flex-1">16:30</h3>
+                        <hr>
+                        <div class="flex items-center space-x-2">
+                            <h3 class="flex-1 text-right">12°C</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-thermometer-sun" viewBox="0 0 16 16">
+                                <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5"/>
+                                <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1m5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5m4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0M8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5M12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5m-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708M8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5"/>
+                              </svg>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <h3 class="flex-1 text-right">Patchy Drizzle Day</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                 class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <h3 class="flex-1 text-right">16:30</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                 class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,15 +208,15 @@
                     <div class="sm:flex justify-between items-center">
                         
                         <div class="flex flex-1 space-x-8 items-center">
-                            <p class="text-2xl font-black title-header">WHETHERSA</p>
+                            <p class="text-2xl font-black title-header">METEOROLOGY</p>
                         </div>
 
                         <div class="flex items-center space-x-8 justify-between mt-5 sm:mt-0">
                             <div class="flex items-center space-x-4">
-                                <button onclick="ChangeLanguage(this,'English');" class="hover:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang">
+                                <button onclick="ChangeLanguage(this,'English');" class="hover:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang active">
                                     English
                                 </button>
-                                <button onclick="ChangeLanguage(this,'Persian');" class="over:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang active">
+                                <button onclick="ChangeLanguage(this,'Persian');" class="over:scale-110 rounded-full h-8 w-10 shadow-md flex justify-center items-center btn-lang">
                                     Persian
                                 </button>
                             </div>
@@ -312,37 +348,57 @@
 
                     <div id="moreinformatino" class="flex flex-col space-y-4">
                         <h3 class="text-lg text-center font-bold">Today's Highlights</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 box-information">
-                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-4">
-                                <p class="text-gray-400 w-full">UV Index</p><img src="./Home _ WHETHERSA_files/uv.png"
-                                                                                 class="w-20"
-                                                                                 alt="">
-                                <div class="flex justify-between items-center space-x-2">
-                                    <p class="text-gray-100 dark:text-white/40 text-md">1</p>
-                                    <p class="text-gray-200 dark:text-white/60 text-md">2</p>
-                                    <p class="text-gray-300 dark:text-white/80 text-xl">3</p>
-                                    <p class=" text-2xl font-bold">4</p>
-                                    <p class="text-gray-300 dark:text-white/80 text-xl">5</p>
-                                    <p class="text-gray-200 dark:text-white/60 text-md">6</p>
-                                    <p class="text-gray-100 dark:text-white/40 text-md">7</p>
+
+                        <div class="flex justify-content-center align-items-center flex-wrap gap-4 box-information">
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4 relative" >
+                                <p class="text-gray-400">Wind Staus</p>
+                                <div class="flex items-top">
+                                    <figure class=" absolute bottom-0">
+                                        <svg class="icon w-24" viewBox="0 0 100 100">
+                                            <use class="mist" xlink:href="#mist" x="0" y="0"></use>
+                                        </svg>
+                                    </figure>
+                                    <div class="flex items-end">
+                                        <p class=" text-[4rem] font-light">7.70</p>
+                                        <div class="mb-5">km/h</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div
-                                    class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-4 relative">
-                                <p class="text-gray-400 w-full">Wind Staus</p>
-                                <figure class=" absolute bottom-0">
-                                    <svg class="icon w-24" viewBox="0 0 100 100">
-                                        <use class="mist" xlink:href="#mist" x="0" y="0"></use>
+                                <div class="flex items-center space-x-2 v-hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                         class="h-4 w-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                                        </path>
                                     </svg>
-                                </figure>
-                                <div class="flex items-end">
-                                    <p class=" text-[4rem] font-light">7.70</p>
-                                    <div class="mb-5">km/h</div>
                                 </div>
                             </div>
-                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col items-center space-y-6">
-                                <p class="text-gray-400 w-full">Sunrise &amp; Sunset</p>
-                                <div class="flex space-x-4">
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4 relative" >
+                                <p class="text-gray-400">Wind Staus</p>
+                                <div class="flex items-top">
+                                    <figure class=" absolute bottom-0">
+                                        <svg class="icon w-24" viewBox="0 0 100 100">
+                                            <use class="mist" xlink:href="#mist" x="0" y="0"></use>
+                                        </svg>
+                                    </figure>
+                                    <div class="flex items-end">
+                                        <p class=" text-[4rem] font-light">7.70</p>
+                                        <div class="mb-5">km/h</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2 v-hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                         class="h-4 w-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-6" >
+                                <p class="text-gray-400">Sunrise &amp; Sunset</p>
+                                <div class="flex items-top">
                                     <figure>
                                         <svg class="icon h-9 w-9" viewBox="0 0 100 100">
                                             <use xlink:href="#sun"></use>
@@ -371,7 +427,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col space-y-4">
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4" >
                                 <p class="text-gray-400">Humidity</p>
                                 <div class="flex items-top">
                                     <p class=" text-[4rem] font-light">12</p>
@@ -388,7 +444,7 @@
                                     <p class="w-full">No data </p>
                                 </div>
                             </div>
-                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col space-y-4">
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4" >
                                 <p class="text-gray-400">Visibility</p>
                                 <div class="flex items-top">
                                     <p class=" text-[4rem] font-light">5.2</p>
@@ -405,7 +461,7 @@
                                     <p class="w-full">No data </p>
                                 </div>
                             </div>
-                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col space-y-4">
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4" >
                                 <p class="text-gray-400">Air Quality</p>
                                 <div class="flex items-top">
                                     <p class=" text-[4rem] font-light">105</p>
@@ -419,10 +475,11 @@
                                               d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
                                         </path>
                                     </svg>
-                                    <p class="w-full">No data </p>
+                                    <p class="w-full">No data</p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -443,19 +500,19 @@
 <script src="./assets/js/main.js" defer=""></script>
 
 <script>
+    //set cookie
     
-    // meteorology
-
-    // هوا شناسی
 
     //from cookie
-    let TempalteMode = 1; // on // 1 => english , 3 => persian
+    let TempalteMode = 1; // on (light) and language => english 
+
+
     let btnChangeTem = document.getElementsByClassName("BtnChangeTem")[0];
+    let SearchBox = document.getElementById("searchbox");
 
     function ChangeLanguage(e,val){
         let TitleHeader = document.getElementsByClassName("title-header")[0];
         let SideBar = document.getElementById("sidebar");
-        let SearchBox = document.getElementById("searchbox");
         let MoreInformatinoBox = document.getElementById("moreinformatino");
         let Forecast = document.getElementById("forecast");
 
@@ -464,7 +521,7 @@
                 SideBar.classList.remove("order");
                 e.parentNode.childNodes[3].classList.remove("active");
                 e.parentNode.childNodes[1].classList.add("active");
-                TitleHeader.innerHTML = "Meteorology";
+                TitleHeader.innerHTML = "METEOROLOGY";
                 btnChangeTem.classList.remove("persian-btn-change-template");
                 btnChangeTem.parentElement.classList.remove("btn-change-tem-lang");
                 TitleHeader.parentElement.classList.remove("persian-title");
@@ -473,6 +530,10 @@
                 SearchBox.setAttribute("placeholder","Search for place");
                 MoreInformatinoBox.firstElementChild.innerHTML = "Today's Highlights";
                 Forecast.classList.remove("persian");
+                MoreInformatinoBox.children[1].classList.remove("persian");
+                SideBar.children[1].children[1].classList.remove("d-none");
+                SideBar.children[1].children[2].classList.add("d-none");
+                document.documentElement.classList.remove("font-persian");
             }else{
                 SideBar.classList.add("order");
                 e.parentNode.childNodes[1].classList.remove("active");
@@ -486,6 +547,10 @@
                 SearchBox.setAttribute("placeholder","نام شهر را وارد کنید")
                 MoreInformatinoBox.firstElementChild.innerHTML = "اطلاعات امروز";
                 Forecast.classList.add("persian");
+                MoreInformatinoBox.children[1].classList.add("persian");
+                SideBar.children[1].children[1].classList.add("d-none");
+                SideBar.children[1].children[2].classList.remove("d-none");
+                document.documentElement.classList.add("font-persian");
             }
        }
     }
@@ -504,6 +569,10 @@
     btnChangeTem.addEventListener("click",function(){
         CheckTemplate(TempalteMode)
     })
+
+    function GetData(){
+        alert(SearchBox.value)
+    }
 
 </script>
 
