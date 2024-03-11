@@ -4,10 +4,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Home | WHETHERSA</title>
+    <title>METEOROLOGY</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/faveicon.png">
     <link rel="preload" href="./assets/css/PackageStyle1.css" as="style">
     <link rel="stylesheet" href="./assets/css/PackageStyle2.css" data-n-g="">
+    <link rel="stylesheet" href="./assets/css/sweetalert2.min.css">
 </head>
 
 <body>
@@ -492,13 +493,12 @@
 <script src="./assets/js/framework.js"></script>
 <script src="./assets/js/app.js"></script>
 <script src="./assets/js/package1.js"></script>
-<!-- <script src="./assets/js/package2.js"></script> -->
 <script src="./assets/js/main.js" defer=""></script>
 <script src="./assets/js/weather.js" defer=""></script>
+<script src="./assets/js/sweetalert2.all.min.js"></script>
 
 <script>
     //set cookie
-    
 
     //from cookie
     let TempalteMode = 1; // on (light) and language => english 
@@ -520,6 +520,7 @@
                 e.parentNode.childNodes[3].classList.remove("active");
                 e.parentNode.childNodes[1].classList.add("active");
                 TitleHeader.innerHTML = "METEOROLOGY";
+                document.title = "METEOROLOGY";
                 btnChangeTem.classList.remove("persian-btn-change-template");
                 btnChangeTem.parentElement.classList.remove("btn-change-tem-lang");
                 TitleHeader.parentElement.classList.remove("persian-title");
@@ -538,6 +539,7 @@
                 e.parentNode.childNodes[1].classList.remove("active");
                 e.parentNode.childNodes[3].classList.add("active");
                 TitleHeader.innerHTML = "هوا شناسی";
+                document.title = "هوا شناسی";
                 btnChangeTem.classList.add("persian-btn-change-template");
                 btnChangeTem.parentElement.classList.add("btn-change-tem-lang");
                 TitleHeader.parentElement.classList.add("persian-title");
@@ -583,26 +585,31 @@
         
         //api for today
         const response = await fetch(apiUrlMain + city +`&lang=`+ Lang +`&appid=${apiKey}`);
-        console.log(response.status);
-        if(response.status == 404){
-            alert("location-not-found");
-        }else{
-          var data = await response.json();
+       // console.log(response);
+        console.log(response);
+        // if(response.status == 404){
+        //     Swal.fire({
+        //     title: "Good job!",
+        //     text: "You clicked the button!",
+        //     icon: "info"
+        //     });
+        // }else{
+        //   var data = await response.json();
 
-          console.log(data);
-        }
+        //   console.log(data);
+        // }
 
 
-        //api fot forcast
-        const responseForcast = await fetch(apiUrlForcast + city +`&lang=`+ Lang +`&appid=${apiKey}`);
-        console.log(responseForcast.status);
-        if(responseForcast.status == 404){
-            alert("location-not-found");
-        }else{
-          var data = await responseForcast.json();
+        // //api for forcast
+        // const responseForcast = await fetch(apiUrlForcast + city +`&lang=`+ Lang +`&appid=${apiKey}`);
+        // console.log(responseForcast.status);
+        // if(responseForcast.status == 404){
+        //     alert("location-not-found");
+        // }else{
+        //   var data = await responseForcast.json();
 
-          console.log(data);
-        }
+        //   console.log(data);
+        // }
       }
 </script>
 
