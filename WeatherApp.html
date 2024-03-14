@@ -13,10 +13,20 @@
 
 <body>
 
+    <div class="loader d-none">
+        <div class="data-loader">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
 <div id="__next" data-reactroot="">
     <div class="min-h-screen bg-gray-100 dark:bg-black2 dark:text-white">
         <main class="md:flex max-w-screen-2xl mx-auto overflow-x-hidden">
-
             <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
                 <defs>
                     <radialgradient id="gradYellow" cx="50%" cy="50%" r="80%" fx="90%" fy="80%">
@@ -560,57 +570,90 @@
     function CheckTemplate(Mode){
         var Template = document.documentElement;
         if(Mode == 1){
-            Template.classList.add("dark")  
+            Template.classList.add("dark");  
             TempalteMode = 0;
         } else{
-            Template.classList.remove("dark")
+            Template.classList.remove("dark");
             TempalteMode = 1;
         }
     }
 
     btnChangeTem.addEventListener("click",function(){
         CheckTemplate(TempalteMode)
-    })
+    });
 
-</script>
+    const apiKey = "8a501e4ecbade78f2182073c7a191453";
+    const apiUrlMain = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=';
+    const apiUrlForcast = 'https://api.openweathermap.org/data/2.5/forecast?&q=';
 
+    async function GetData(){
+        //show loader
+        let ElemBody = document.body;
+        let Loader = document.getElementsByClassName("loader")[0];
+        ElemBody.style.overflow = "hidden";
+        Loader.classList.remove("d-none");
 
-<script>
-      const apiKey = "8a501e4ecbade78f2182073c7a191453";
-      const apiUrlMain = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=';
-      const apiUrlForcast = 'https://api.openweathermap.org/data/2.5/forecast?&q=';
-
-      async function GetData(){
-        let city = SearchBox.value;
+        //delay
+        // setTimeout( () =>{
+        //     console.log(Lang)
+        // }, 2000);
         
-        //api for today
-        const response = await fetch(apiUrlMain + city +`&lang=`+ Lang +`&appid=${apiKey}`);
-       // console.log(response);
-        console.log(response);
-        // if(response.status == 404){
-        //     Swal.fire({
-        //     title: "Good job!",
-        //     text: "You clicked the button!",
-        //     icon: "info"
-        //     });
-        // }else{
-        //   var data = await response.json();
+        let city = SearchBox.value;
+     
+        //errors
+        let titleErrorResponse;
+        let textErrorResponse;
+        let textErrorLocation;
+        if(Lang == "en"){
+            titleErrorResponse = "Error";
+            textErrorResponse = "There was an error receiving information!";
+            textErrorLocation = "Location Not Found!";
+        }else{
+            titleErrorResponse = "خطا";
+            textErrorResponse = "!دریافت اطلاعات با خطا مواجه شد";
+            textErrorLocation = "!مکان مورد نظر شما یافت نشد";
+        }
 
-        //   console.log(data);
-        // }
+        try {
+            //api for today
+            const response = await fetch(apiUrlMain + city +`&lang=`+ Lang +`&appid=${apiKey}`);
 
+            //api for forcast
+            const responseForcast = await fetch(apiUrlForcast + city +`&lang=`+ Lang +`&appid=${apiKey}`);
+              
+            //hide loader
+            ElemBody.style.overflow = "visible";
+            Loader.classList.add("d-none");
 
-        // //api for forcast
-        // const responseForcast = await fetch(apiUrlForcast + city +`&lang=`+ Lang +`&appid=${apiKey}`);
-        // console.log(responseForcast.status);
-        // if(responseForcast.status == 404){
-        //     alert("location-not-found");
-        // }else{
-        //   var data = await responseForcast.json();
+            //response tody
+            if(response.status == 404){
+                Swal.fire({
+                title: titleErrorResponse,
+                text: textErrorLocation,
+                icon: "info"
+                });
+            }else{
+                //response tody
+                var data = await response.json();
+                console.log(data);
 
-        //   console.log(data);
-        // }
-      }
+                //response forcast
+                var data = await responseForcast.json();
+                console.log(data);
+            }
+
+        } catch (error) {
+            Swal.fire({
+            title: titleErrorResponse,
+            text: textErrorResponse,
+            icon: "error"
+            });
+
+            ElemBody.style.overflow = "visible";
+            Loader.classList.add("d-none");
+            return;
+        }
+    }
 </script>
 
 </body>
