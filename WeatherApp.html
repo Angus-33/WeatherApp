@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="./assets/css/sweetalert2.min.css">
 </head>
 
-<body>
+<body onload="HideLodaer()">
 
-    <div class="loader d-none">
-        <div class="data-loader">
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+<div class="loader d-none">
+    <div class="data-loader">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
+</div>
 
 <div id="__next" data-reactroot="">
     <div class="min-h-screen bg-gray-100 dark:bg-black2 dark:text-white">
@@ -355,10 +355,9 @@
 
                     <div id="moreinformatino" class="flex flex-col space-y-4">
                         <h3 class="text-lg text-center font-bold">Today's Highlights</h3>
-
                         <div class="flex justify-content-center align-items-center flex-wrap gap-4 box-information">
                             <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4 relative" >
-                                <p class="text-gray-400">Wind Staus</p>
+                                <p class="text-gray-400 speed-title">Wind Staus</p>
                                 <div class="flex items-top">
                                     <figure class=" absolute bottom-0">
                                         <svg class="icon w-24" viewBox="0 0 100 100">
@@ -366,7 +365,7 @@
                                         </svg>
                                     </figure>
                                     <div class="flex items-end">
-                                        <p class=" text-[4rem] font-light">7.70</p>
+                                        <p class=" text-[4rem] font-light speed">7.70</p>
                                         <div class="mb-5">km/h</div>
                                     </div>
                                 </div>
@@ -381,39 +380,22 @@
                                 </div>
                             </div>
                             <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4 relative" >
-                                <p class="text-gray-400">Wind Staus</p>
+                                <p class="text-gray-400 pressure-title">Pressure</p>
                                 <div class="flex items-top">
-                                    <figure class=" absolute bottom-0">
-                                        <svg class="icon w-24" viewBox="0 0 100 100">
-                                            <use class="mist" xlink:href="#mist" x="0" y="0"></use>
-                                        </svg>
-                                    </figure>
-                                    <div class="flex items-end">
-                                        <p class=" text-[4rem] font-light">7.70</p>
-                                        <div class="mb-5">km/h</div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center space-x-2 v-hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                                         class="h-4 w-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
-                                        </path>
-                                    </svg>
+                                    <p class="humidity text-[4rem] font-light pressure">12</p>
+                                    <div class="mt-5">atm</div>
                                 </div>
                             </div>
                             <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-6" >
-                                <p class="text-gray-400">Sunrise &amp; Sunset</p>
+                                <p class="text-gray-400 title-sunset-sunrise">Sunrise &amp; Sunset</p>
                                 <div class="flex items-top">
                                     <figure>
                                         <svg class="icon h-9 w-9" viewBox="0 0 100 100">
                                             <use xlink:href="#sun"></use>
                                         </svg>
                                     </figure>
-                                    <div>
-                                        <p>06:30 AM</p>
-                                        <p class="text-xs text-gray-400">-1m 32s</p>
+                                    <div class="flex justify-content-center align-items-center" style="margin-left: 16px;">
+                                        <p class="sunrise">06:30 AM</p>
                                     </div>
                                 </div>
                                 <div class="flex space-x-4">
@@ -428,61 +410,38 @@
                                                  class="stars animated infinite flash delay-2s"></use>
                                         </svg>
                                     </figure>
-                                    <div>
-                                        <p>08:43 PM</p>
-                                        <p class="text-xs text-gray-400">+2m 43s</p>
+                                    <div class="flex justify-content-center align-items-center">
+                                        <p class="sunset">08:43 PM</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4" >
-                                <p class="text-gray-400">Humidity</p>
+                                <p class="text-gray-400 humidity-title">Humidity</p>
                                 <div class="flex items-top">
-                                    <p class=" text-[4rem] font-light">12</p>
+                                    <p class="humidity text-[4rem] font-light">12</p>
                                     <div class="mt-5">%</div>
                                 </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                                         class="h-4 w-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
-                                        </path>
-                                    </svg>
-                                    <p class="w-full">No data </p>
-                                </div>
                             </div>
                             <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4" >
-                                <p class="text-gray-400">Visibility</p>
+                                <p class="text-gray-400 temp-title">Temp</p>
                                 <div class="flex items-top">
-                                    <p class=" text-[4rem] font-light">5.2</p>
-                                    <div class="mt-5">km</div>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                                         class="h-4 w-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
-                                        </path>
-                                    </svg>
-                                    <p class="w-full">No data </p>
+                                    <p class=" text-[4rem] font-light temp">5.2</p>
+                                    <div class="mt-5">°C</div>
                                 </div>
                             </div>
-                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-4" >
-                                <p class="text-gray-400">Air Quality</p>
+                            <div class="bg-white dark:bg-black rounded-2xl shadow-sm p-4 h-56 flex flex-col justify-content-center align-items-center w-250 space-y-6" >
+                                <p class="text-gray-400 title-sunset-sunrise min-max-temp-title">Max &amp; Min Temp</p>
                                 <div class="flex items-top">
-                                    <p class=" text-[4rem] font-light">105</p>
-                                    <div class="mt-5"></div>
+                                    <div>
+                                        <p class="temp_min"></p>
+                                        <p class="text-xs text-gray-400 temp-min-title">کمترین</p>
+                                    </div>
                                 </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
-                                         class="h-4 w-4">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                              d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
-                                        </path>
-                                    </svg>
-                                    <p class="w-full">No data</p>
+                                <div class="flex space-x-4">
+                                    <div>
+                                        <p class="temp_max"></p>
+                                        <p class="text-xs text-gray-400 temp-max-title">بیشترین</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -508,6 +467,22 @@
 <script src="./assets/js/sweetalert2.all.min.js"></script>
 
 <script>
+    let ElemBody = document.body;
+    let Loader = document.getElementsByClassName("loader")[0];
+
+    function ShowLoader(){
+        ElemBody.style.overflow = "hidden";
+        Loader.classList.remove("d-none");
+    }
+
+    function HideLodaer(){
+        ElemBody.style.overflow = "visible";
+        Loader.classList.add("d-none");
+    }
+
+    //show loader
+    ShowLoader();
+
     //set cookie
 
     //from cookie
@@ -523,6 +498,14 @@
         let SideBar = document.getElementById("sidebar");
         let MoreInformatinoBox = document.getElementById("moreinformatino");
         let Forecast = document.getElementById("forecast");
+        let TitleSunsetSunrise = document.querySelector(".title-sunset-sunrise");
+        let HumidityTitle = document.querySelector(".humidity-title");
+        let TempTitle = document.querySelector(".temp-title");
+        let MinMaxTempTitle = document.querySelector(".min-max-temp-title");
+        let TempMaxTitle = document.querySelector(".temp-max-title");
+        let TempMinTitle = document.querySelector(".temp-min-title");
+        let Speed = document.querySelector(".speed-title");
+        let Pressure = document.querySelector(".pressure-title");
 
        if(!e.classList.contains("active")){
             if(val == "English"){ 
@@ -543,6 +526,14 @@
                 SideBar.children[1].children[1].classList.remove("d-none");
                 SideBar.children[1].children[2].classList.add("d-none");
                 document.documentElement.classList.remove("font-persian");
+                TitleSunsetSunrise.innerHTML = "Sunrise &amp; Sunset";
+                HumidityTitle.innerHTML = "Humidity";
+                TempTitle.innerHTML = "Temp";
+                MinMaxTempTitle.innerHTML = "Max & Min Temp";
+                TempMaxTitle.innerHTML = "Max";
+                TempMinTitle.innerHTML = "Min";
+                Speed.innerHTML = "Speed";
+                Pressure.innerHTML = "Pressure";
                 Lang = "en";
             }else{
                 SideBar.classList.add("order");
@@ -562,6 +553,14 @@
                 SideBar.children[1].children[1].classList.add("d-none");
                 SideBar.children[1].children[2].classList.remove("d-none");
                 document.documentElement.classList.add("font-persian");
+                TitleSunsetSunrise.innerHTML = "طلوع و غروب  خورشید";
+                HumidityTitle.innerHTML = "رطوبت هوا";
+                TempTitle.innerHTML = "دما";
+                MinMaxTempTitle.innerHTML = "میزان دما";
+                TempMaxTitle.innerHTML = "بیشترین";
+                TempMinTitle.innerHTML = "کمترین";
+                Speed.innerHTML = "سرعت هوا";
+                Pressure.innerHTML = "فشار هوا";
                 Lang = "fa";
             }
        }
@@ -588,15 +587,7 @@
 
     async function GetData(){
         //show loader
-        let ElemBody = document.body;
-        let Loader = document.getElementsByClassName("loader")[0];
-        ElemBody.style.overflow = "hidden";
-        Loader.classList.remove("d-none");
-
-        //delay
-        // setTimeout( () =>{
-        //     console.log(Lang)
-        // }, 2000);
+        ShowLoader();
         
         let city = SearchBox.value;
      
@@ -635,7 +626,26 @@
             }else{
                 //response tody
                 var data = await response.json();
+                var sunrise = document.querySelector(".sunrise");
+                var sunset = document.querySelector(".sunset");
+                var humidity = document.querySelector(".humidity");
+                var pressure = document.querySelector(".pressure");
+                var temp = document.querySelector(".temp");
+                var temp_max = document.querySelector(".temp_max");
+                var temp_min = document.querySelector(".temp_min");
+                var speed = document.querySelector(".speed");
+                
+
                 console.log(data);
+
+                sunrise.innerHTML = timeConverter(data.sys.sunrise);
+                sunset.innerHTML = timeConverter(data.sys.sunset);
+                humidity.innerHTML = data.main.humidity;
+                pressure.innerHTML = data.main.pressure;
+                temp.innerHTML = data.main.temp;
+                temp_max.innerHTML = data.main.temp_max + " °C ";
+                temp_min.innerHTML = data.main.temp_min + " °C ";
+                speed.innerHTML = data.wind.speed;
 
                 //response forcast
                 var data = await responseForcast.json();
@@ -649,9 +659,16 @@
             icon: "error"
             });
 
-            ElemBody.style.overflow = "visible";
-            Loader.classList.add("d-none");
+            HideLodaer();
             return;
+        }
+
+        function timeConverter(UNIX_timestamp){
+            var a = new Date(UNIX_timestamp * 1000);
+            var hour = a.getHours();
+            var min = a.getMinutes();
+            var time = hour + ' : ' + min ;
+            return time;
         }
     }
 </script>
