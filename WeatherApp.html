@@ -117,7 +117,7 @@
                             </path>
                         </svg>
                     </button>
-                    <input type="text" id="searchbox" class="outline-none bg-transparent flex-1 md:w-full" value="" placeholder="Search for place">
+                    <input type="text" id="searchbox" class="outline-none bg-transparent flex-1 md:w-full" value="shiraz" placeholder="Search for place">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"
                             class="h-5 w-5 text-gray-400">
@@ -432,13 +432,13 @@
                                 <div class="flex items-top">
                                     <div>
                                         <p class="temp_min"></p>
-                                        <p class="text-xs text-gray-400 temp-min-title">کمترین</p>
+                                        <p class="text-xs text-gray-400 temp-min-title">Min</p>
                                     </div>
                                 </div>
                                 <div class="flex space-x-4">
                                     <div>
                                         <p class="temp_max"></p>
-                                        <p class="text-xs text-gray-400 temp-max-title">بیشترین</p>
+                                        <p class="text-xs text-gray-400 temp-max-title">Max</p>
                                     </div>
                                 </div>
                             </div>
@@ -508,9 +508,13 @@
     let TempalteMode = 1; // on (light) and language => english 
     let Lang = "en";
 
-
     let btnChangeTem = document.getElementsByClassName("BtnChangeTem")[0];
     let SearchBox = document.getElementById("searchbox");
+
+    //default api to shiraz
+    setTimeout(() => {
+        SearchBox.previousElementSibling.click();
+    }, 100);
 
     function ChangeLanguage(e,val){
         let TitleHeader = document.getElementsByClassName("title-header")[0];
@@ -632,8 +636,7 @@
             const responseForcast = await fetch(apiUrlForcast + city +`&lang=`+ Lang +`&appid=${apiKey}`);
               
             //hide loader
-            ElemBody.style.overflow = "visible";
-            Loader.classList.add("d-none");
+            HideLodaer();
 
             //response tody
             if(response.status == 404){
