@@ -27,6 +27,7 @@
 <div id="__next" data-reactroot="">
     <div class="min-h-screen bg-gray-100 dark:bg-black2 dark:text-white">
         <main class="md:flex max-w-screen-2xl mx-auto overflow-x-hidden">
+
             <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
                 <defs>
                     <radialgradient id="gradYellow" cx="50%" cy="50%" r="80%" fx="90%" fy="80%">
@@ -247,108 +248,61 @@
                     <div class="flex justify-center md:w-full p-2 md:p-6 pl-0">
                         <div id="forecast" class="flex justify-content-center align-items-center flex-wrap">
                             <div class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                                <p>Tue</p>
-                                <figure>
-                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                        <use xlink:href="#moon" x="-20" y="-15"></use>
-                                        <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                                        <use id="snowFlake2" xlink:href="#snowFlake" x="35" y="65"></use>
-                                        <use id="snowFlake4" xlink:href="#snowFlake" x="50" y="65"></use>
-                                        <use xlink:href="#rainDrizzle" x="25" y="65"></use>
-                                        <use xlink:href="#rainDrizzle" x="40" y="65"></use>
-                                        <use xlink:href="#whiteCloud" x="7"></use>
-                                    </svg>
-                                </figure>
+                                <p class="title-forcast">Tue</p>
+                                <img src="https://openweathermap.org/img/wn/10d@2x.png" class="icon h-16 w-16 icon-forcast" alt="">
                                 <div class="flex items-center">
-                                    <p class="font-medium">12<!-- --> °</p>
-                                    <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                                    <p class="font-medium temp-forcast">12°</p>
+                                    <p class="text-black text-xs px-2">km/h</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="text-gray-400 text-xs date-forcast"></p>
                                 </div>
                             </div>
-                            <div
-                                    class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                                <p>Wed</p>
-                                <figure>
-                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                        <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                                        <use xlink:href="#whiteCloud" x="7"></use>
-                                    </svg>
-                                </figure>
+                            <div class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                                <p class="title-forcast">Tue</p>
+                                <img src="https://openweathermap.org/img/wn/10d@2x.png" class="icon h-16 w-16 icon-forcast" alt="">
                                 <div class="flex items-center">
-                                    <p class="font-medium">22<!-- --> °</p>
-                                    <p class="text-gray-400 text-xs">5<!-- --> °</p>
+                                    <p class="font-medium temp-forcast">12°</p>
+                                    <p class="text-black text-xs px-2">km/h</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="text-gray-400 text-xs date-forcast">2°</p>
                                 </div>
                             </div>
-                            <div
-                                    class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                                <p>Thu</p>
-                                <figure>
-                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                        <use xlink:href="#moon" x="-20" y="-15"></use>
-                                        <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                                        <use xlink:href="#rainDrizzle" x="25" y="65"></use>
-                                        <use xlink:href="#rainDrizzle" x="40" y="65"></use>
-                                        <use xlink:href="#whiteCloud" x="7"></use>
-                                    </svg>
-                                </figure>
+                            <div class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                                <p class="title-forcast">Tue</p>
+                                <img src="https://openweathermap.org/img/wn/10d@2x.png" class="icon h-16 w-16 icon-forcast" alt="">
                                 <div class="flex items-center">
-                                    <p class="font-medium">1<!-- --> °</p>
-                                    <p class="text-gray-400 text-xs">2<!-- --> °</p>
+                                    <p class="font-medium temp-forcast">12°</p>
+                                    <p class="text-black text-xs px-2">km/h</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="text-gray-400 text-xs date-forcast">2°</p>
                                 </div>
                             </div>
-                            <div
-                                    class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                                <p>Fri</p>
-                                <figure>
-                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                        <use xlink:href="#moon" x="-15"></use>
-                                        <use xlink:href="#star" x="42" y="30" class="stars animated infinite flash"></use>
-                                        <use xlink:href="#star" x="61" y="32"
-                                            class="stars animated infinite flash delay-1s"></use>
-                                        <use xlink:href="#star" x="55" y="50"
-                                            class="stars animated infinite flash delay-2s"></use>
-                                    </svg>
-                                </figure>
+                            <div class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                                <p class="title-forcast">Tue</p>
+                                <img src="https://openweathermap.org/img/wn/10d@2x.png" class="icon h-16 w-16 icon-forcast" alt="">
                                 <div class="flex items-center">
-                                    <p class="font-medium">21<!-- --> °</p>
-                                    <p class="text-gray-400 text-xs">4<!-- --> °</p>
+                                    <p class="font-medium temp-forcast">12°</p>
+                                    <p class="text-black text-xs px-2">km/h</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="text-gray-400 text-xs date-forcast">2°</p>
                                 </div>
                             </div>
-                            <div
-                                    class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                                <p>Sat</p>
-                                <figure>
-                                    <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                        <use xlink:href="#grayCloud" class="small-cloud" fill="url(#gradGray)"></use>
-                                        <use xlink:href="#grayCloud" x="25" y="10" class="reverse-small-cloud"
-                                            fill="url(#gradDarkGray)">
-                                        </use>
-                                        <use xlink:href="#thunderBolt" x="30" y="61"
-                                            class="lighting animated infinite flash"></use>
-                                        <use xlink:href="#whiteCloud" x="7"></use>
-                                        <use xlink:href="#thunderBolt" x="45" y="56"
-                                            class="lighting animated infinite flash delay-1s">
-                                        </use>
-                                    </svg>
-                                </figure>
+                            <div class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
+                                <p class="title-forcast">Tue</p>
+                                <img src="https://openweathermap.org/img/wn/10d@2x.png" class="icon h-16 w-16 icon-forcast" alt="">
                                 <div class="flex items-center">
-                                    <p class="font-medium">6 °</p>
-                                    <p class="text-gray-400 text-xs">-1 °</p>
+                                    <p class="font-medium temp-forcast">12°</p>
+                                    <p class="text-black text-xs px-2">km/h</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <p class="text-gray-400 text-xs date-forcast">2°</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div
-                                class="flex flex-col space-y-2 m-2 bg-white dark:bg-black shadow-lg py-6 px-9 rounded-lg justify-center items-center transition-all hover:translate-y-5">
-                            <p>Mon</p>
-                            <figure>
-                                <svg class="icon h-16 w-16" viewBox="0 0 100 100">
-                                    <use xlink:href="#sun"></use>
-                                </svg>
-                            </figure>
-                            <div class="flex items-center">
-                                <p class="font-medium">8 °</p>
-                                <p class="text-gray-400 text-xs">2 °</p>
-                            </div>
-                        </div> -->
                     </div>
 
                     <div id="moreinformatino" class="flex flex-col space-y-4">
@@ -659,8 +613,6 @@
                 var caption = document.getElementsByClassName("caption");  
                 var cityName = document.getElementsByClassName("city-name");
 
-                console.log(data);
-
                 sunrise.innerHTML = timeConverter(data.sys.sunrise);
                 sunset.innerHTML = timeConverter(data.sys.sunset);
                 humidity.innerHTML = data.main.humidity;
@@ -701,7 +653,24 @@
 
                 //response forcast
                 var data = await responseForcast.json();
-                console.log(data);
+
+                var TitleForcast = document.getElementsByClassName("title-forcast"); 
+                var IconForcast = document.getElementsByClassName("icon-forcast"); 
+                var TempForcast = document.getElementsByClassName("temp-forcast"); 
+                var DateForcast = document.getElementsByClassName("date-forcast"); 
+
+                var WeekEnglish = ["Sat", "Sun", "Mon","Tue","Wed", "Thu","Fri"];
+                var WeekPersian = ["شنبه","یکشنبه","دوشنبه" ,"سه شنبه" ,"چهارشنبه","پنج شنبه","جمعه"];
+                var i =0;
+                data.list.forEach(element => {
+                    if(element.dt_txt.includes("00:00:00")){
+                        TitleForcast[i].innerHTML = Lang == "en" ? WeekEnglish[new Date(element.dt_txt).getDay()] :WeekPersian[new Date(element.dt_txt).getDay()] ;
+                        IconForcast[i].setAttribute("src","https://openweathermap.org/img/wn/" + element.weather[0].icon+".png");
+                        TempForcast[i].innerHTML = element.wind.speed;
+                        DateForcast[i].innerHTML = element.dt_txt.replace(" 00:00:00","");
+                        i++;
+                    }
+                });
             }
 
         } catch (error) {
